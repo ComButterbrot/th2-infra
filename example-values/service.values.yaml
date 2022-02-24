@@ -10,7 +10,12 @@ rabbitmq:
     enabled: true
     storageClass: local-storage
     size: 10Gi
+    
+externalRabbitMQHost:
+  host: <host>
 
 cassandra:
   internal: false
   host: <cassandra-host>
+  cluster:
+    datacenter: <datacenter>
